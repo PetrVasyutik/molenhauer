@@ -1,21 +1,21 @@
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99;
   padding: 20px 0;
-  background-color: $g-0;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  max-width: 1730px;
 }
 
-.navbar-content {
+.navbar__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navbar-logo {
+.navbar__logo {
   color: $g-999;
   font-weight: 700;
 }

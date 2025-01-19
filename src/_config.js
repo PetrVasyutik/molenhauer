@@ -7,20 +7,40 @@ export const site = {
 };
 
 export const app = {
-  title: 'Template',
+  title: 'Molenhauer',
 };
 
 
 
 export const links = [
   {
-    title: "Home",
-    alias: 'Home',
+    title: "Services",
+    alias: 'Services',
     url: '/',
   },
   {
-    title: 'About',
-    alias: 'About',
-    url: '/about',
+    title: 'Know How',
+    alias: 'Know How',
+    url: '#',
+  },
+  {
+    title: 'Projects & References',
+    alias: 'Projects & References',
+    url: '#',
+  },
+  {
+    title: 'Our Company',
+    alias: 'Our Company',
+    url: '#',
+  },
+  {
+    title: 'Our Clients',
+    alias: 'Our Clients',
+    url: '#',
+  },
+  {
+    title: 'Careers',
+    alias: 'Careers',
+    url: '#',
   },
 ];

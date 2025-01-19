@@ -1,8 +1,12 @@
 <template>
   <header class="navbar">
     <div class="container">
-      <div class="navbar-content">
-        <router-link class="navbar-logo" to="/">{{ title }}</router-link>
+      <div class="navbar__content">
+        <router-link class="navbar__logo" to="/">
+          <div navbar__logo-container>
+            <img src="@/img/logo.svg" width="263" height="46" alt="Логотип">
+          </div>
+        </router-link>
         <ul class="navbar-list">
           <li class="navbar-item" v-for="link in links" :key="link.alias">
             <router-link class="navbar-link" :to="link.url">{{ link.title }}</router-link>
@@ -23,3 +27,10 @@ export default {
   },
 };
 </script>
+<style lang="scss">
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+</style>

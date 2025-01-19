@@ -63,7 +63,6 @@ li {
 }
 
 footer, // also footer if footer without section
-section,
 .section {
   position: relative;
   padding: 40px 0;
@@ -83,13 +82,14 @@ section,
   flex-direction: column;
   min-height: 100vh;
   margin: 0 auto;
+  max-width: 1730px;
 }
 
 .wrapper-content {
   display: flex;
   flex-direction: column;
   min-height: 70vh;
-  margin-top: 80px; // if header is fixed do mt: headerHeight
+  // margin-top: 80px; // if header is fixed do mt: headerHeight
 }
 
 .container {
