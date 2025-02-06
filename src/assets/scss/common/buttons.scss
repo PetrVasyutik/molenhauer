@@ -1,35 +1,24 @@
 .btn {
   display: inline-block;
-  padding: .8em 2em;
+  padding: 16px 18px;
   line-height: 1;
-  text-transform: uppercase;
   cursor: pointer;
-  border-radius: 30px;
+  font-size: 15px;
+  color: $bg-color;
 
-  // default btn
-  &.btnDefault {
+  &.btn-transparent {
     color: #ffffff;
-    border: 1px solid #333333;
-    background-color: #333333;
+    border: 2px solid #ffffff;
+    background-color: transparent;
   }
 
-  // primary btn
-  &.btnPrimary {
-    color: #ffffff;
-    border: 1px solid #494ce8;
-    background-color: #494ce8;
-  }
-
-  // danger btn
-  &.btnDanger {
-    color: #ffffff;
-    border: 1px solid hsl(0, 48%, 48%);
-    background-color: #b53f3f;
-  }
-
-  &.btnWhite {
-    color: #333333;
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
+  &.btn-accent {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1,2;
+    color: $default-color;
+    background-color: $accent-color;
+    padding: 20px 30px;
+    border: none;
   }
 }

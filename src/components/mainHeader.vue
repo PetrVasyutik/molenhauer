@@ -12,9 +12,9 @@
         </li>
       </ul>
       <div class="navbar__btn-list">
-        <div class="navbar__contacts">
+        <button class="btn btn-accent">
           <span>Contacts Us</span>
-        </div>
+        </button>
         <div class="navbar__lang">
           <div class="navbar__icon-container">
             <button class="navbar__icon">
@@ -28,21 +28,22 @@
             </button>
           </div>
         </div>
-        <button class="navbar-toggle">
-          <div class="navbar-toggle__icon navbar-toggle__icon--open">
-            <img src="@/img/toggle-open.svg" width="33" height="26" alt="">
-          </div>
-          <div class="navbar-toggle__icon navbar-toggle__icon--close">
-            <img src="@/img/toggle-close.svg" width="21" height="21" alt="">
-          </div>
-        </button>
-      </div>
-      <div class="navbar__mobile">
-        <ul class="navbar__list">
-          <li class="navbar__item" v-for="link in links" :key="link.alias">
-            <router-link class="navbar__link" :to="link.url">{{ link.title }}</router-link>
-          </li>
-        </ul>
+          <!-- <button class="navbar-toggle">
+            <div class="navbar-toggle__icon navbar-toggle__icon--open">
+              <img src="@/img/toggle-open.svg" width="33" height="26" alt="">
+            </div>
+            <div class="navbar-toggle__icon navbar-toggle__icon--close">
+              <img src="@/img/toggle-close.svg" width="21" height="21" alt="">
+            </div>
+          </button>
+        </div>
+        <div class="navbar__mobile">
+          <ul class="navbar__list">
+            <li class="navbar__item" v-for="link in links" :key="link.alias">
+              <router-link class="navbar__link" :to="link.url">{{ link.title }}</router-link>
+            </li>
+          </ul>
+        </div> -->
       </div>
     </div>
   </header>

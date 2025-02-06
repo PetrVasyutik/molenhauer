@@ -82,19 +82,6 @@
     }
   }
 
-  &__contacts {
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1,2;
-    color: $default-color;
-    background-color: $accent-color;
-    padding: 20px 30px;
-
-    @media (max-width: 838px) {
-      display: none;
-    }
-  }
-
   &__lang {
     padding: 20px 15px;
     background-color: $default-color;
