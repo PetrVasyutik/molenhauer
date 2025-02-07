@@ -62,12 +62,41 @@ export default {
     display: flex;
     flex-direction: row;
     padding-top: 190px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 210px;
+        right: -645px;
+        width: 618px;
+        height: 618px;
+        background-color: transparent;
+        border: 1px solid #ffff;
+        z-index: -1;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 170px;
+        right: -645px;
+        width: 618px;
+        height: 618px;
+        background-color: transparent;
+        border: 1px solid #FF7C40;
+        transform: rotate(45deg);
+        z-index: -2;
+      }
   }
 
   &__content {
     max-width: 723px;
     margin-top: 90px;
-    width: 50%;
+    padding-bottom: 90px;
+    max-width: 50%;
     flex-basis: 50%;
   }
 
@@ -103,6 +132,22 @@ export default {
       "agil ganzh"
       "agil zuver";
     align-items: center;
+    position: relative;
+    row-gap: 150px;
+    margin-top: 70px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -70px;
+        right: -644px;
+        width: 618px;
+        height: 618px;
+        background: rgba(218, 93, 36, 0.75);
+        border: none;
+        z-index: -1;
+        transform: rotate(45deg);
+      }
   }
 
   &__advantage {
@@ -115,7 +160,7 @@ export default {
       text-align: center;
       position: relative;
       z-index: 1;
-      margin-top: 90px;
+      // margin-top: 90px;
 
       &::before {
         content: "";
@@ -148,14 +193,14 @@ export default {
       grid-area: ganzh;
       position: relative;
       z-index: 1;
-      text-align: center;
-      margin-left: -120px;
+      // text-align: center;
+      // margin-left: -120px;
 
       &::before {
         content: "";
         position: absolute;
         top: -64px;
-        left: 142px;
+        left: 0;
         width: 151px;
         height: 151px;
         background-color: rgba(6, 37, 91, 0.75);
@@ -168,7 +213,7 @@ export default {
         content: "";
         position: absolute;
         top: -85px;
-        left: 142px;
+        left: 0;
         width: 151px;
         height: 151px;
         background-color: transparent;
@@ -182,15 +227,15 @@ export default {
       grid-area: zuver;
       position: relative;
       z-index: 1;
-      text-align: center;
-      margin-left: -120px;
-      margin-top: 140px;
+      // text-align: center;
+      // margin-left: -120px;
+      // margin-top: 140px;
 
       &::before {
         content: "";
         position: absolute;
-        top: -70px;
-        left: 130px;
+        top: -78px;
+        left: -12px;
         width: 177px;
         height: 177px;
         background-color: rgba(6, 37, 91, 0.75);
@@ -202,8 +247,8 @@ export default {
       &::after {
         content: "";
         position: absolute;
-        top: -50px;
-        left: 130px;
+        top: -58px;
+        left: -12px;
         width: 177px;
         height: 177px;
         background-color: transparent;

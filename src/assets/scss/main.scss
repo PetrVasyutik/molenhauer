@@ -91,6 +91,7 @@ footer, // also footer if footer without section
   flex-direction: column;
   min-height: 70vh;
   flex-grow: 1;
+  overflow: hidden;
   // margin-top: 80px; // if header is fixed do mt: headerHeight
 }
 
